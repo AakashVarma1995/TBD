@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>some handy git commands | The Blogging Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="github,git,commands,terminal" />
+  
+  
+  
+  
+  <meta name="description" content="Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Some handy GIT commands">
+<meta property="og:url" content="http://yoursite.com/2020/06/11/myblog/index.html">
+<meta property="og:site_name" content="The Blogging Developer">
+<meta property="og:description" content="Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/06/11/images/git.png">
+<meta property="article:published_time" content="2020-06-11T11:54:49.000Z">
+<meta property="article:modified_time" content="2020-06-12T07:50:38.430Z">
+<meta property="article:author" content="Aakash Varma">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="commands">
+<meta property="article:tag" content="terminal">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/06/11/images/git.png">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="The Blogging Developer" rel="home"> The Blogging Developer </a>
+            
+          </h1>
+
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer" style="margin-bottom: 0px; padding-bottom: 0px;">
+        
+          <section id="main" style="float:none;"><article id="post-myblog" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template" style="border: 1px solid #060608; box-shadow: 4px 4px #060608; padding: 16px; ">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/../images/git.png" rel="gallery_ckbaq5sqw0000krou4ficchqh">
+        <img src="/../images/git.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Some handy GIT commands
+    </h1>
+  
+
+      </header>
+    
+    <hr/>
+    <div class="article-meta" style="margin:5px 0px 10px 0px;">
+      
+	Posted on <a href="/2020/06/11/myblog/" class="article-date">
+	  <time datetime="2020-06-11T11:54:49.000Z" itemprop="datePublished">June 11, 2020</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+		Total reading of this article <span id="busuanzi_value_page_pv"></span> times
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Useful-GIT-Commands"><a href="#Useful-GIT-Commands" class="headerlink" title="Useful GIT Commands"></a>Useful GIT Commands</h1><h2 id="Following-is-the-list-of-some-useful-commands-which-may-come-in-handy-in-everyday-GITting"><a href="#Following-is-the-list-of-some-useful-commands-which-may-come-in-handy-in-everyday-GITting" class="headerlink" title="Following is the list of some useful commands which may come in handy in everyday GITting. "></a>Following is the list of some useful commands which may come in handy in everyday GITting. </h2><h2 id="Index"><a href="#Index" class="headerlink" title="Index:"></a>Index:</h2><ul>
+<li><a href="#Config">Config</a></li>
+<li><a href="#Initialization">Initialization</a></li>
+<li><a href="#commit-and-push">Commit &amp; Push</a></li>
+<li><a href="#checkout-and-pull">Checkout &amp; Pull</a></li>
+<li><a href="#branches">Branches</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<hr>
+<h2 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h2><h3 id="Configure-GIT-Username"><a href="#Configure-GIT-Username" class="headerlink" title="Configure GIT Username:"></a>Configure GIT Username:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="Configure-GIT-Email"><a href="#Configure-GIT-Email" class="headerlink" title="Configure GIT Email:"></a>Configure GIT Email:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config ---global user.email user@example.com</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h2><h3 id="Initialize-a-GIT-repository"><a href="#Initialize-a-GIT-repository" class="headerlink" title="Initialize a GIT repository:"></a>Initialize a GIT repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Flags:<ul>
+<li>–bare : initializes a GIT repository without a working tree (can be used as a remote repository).</li>
+</ul>
+</li>
+</ul>
+<h3 id="Add-a-Remote"><a href="#Add-a-Remote" class="headerlink" title="Add a Remote:"></a>Add a Remote:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin &lt;remote_url&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="List-all-remote-repositories"><a href="#List-all-remote-repositories" class="headerlink" title="List all remote repositories:"></a>List all remote repositories:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="Send-local-commits-to-remote-repository-for-first-time"><a href="#Send-local-commits-to-remote-repository-for-first-time" class="headerlink" title="Send local commits to remote repository for first time:"></a>Send local commits to remote repository for first time:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Commit-and-Push"><a href="#Commit-and-Push" class="headerlink" title="Commit and Push"></a>Commit and Push</h2><h3 id="Show-the-status-of-your-GIT-repository"><a href="#Show-the-status-of-your-GIT-repository" class="headerlink" title="Show the status of your GIT repository:"></a>Show the status of your GIT repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+
+<h3 id="Add-one-or-multiple-files-to-the-staging-area"><a href="#Add-one-or-multiple-files-to-the-staging-area" class="headerlink" title="Add one or multiple files to the staging area:"></a>Add one or multiple files to the staging area:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;files&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Commit-the-staged-changes-with-a-message-To-the-local-repository-gt-HEAD"><a href="#Commit-the-staged-changes-with-a-message-To-the-local-repository-gt-HEAD" class="headerlink" title="Commit the staged changes with a message (To the local repository -&gt; HEAD):"></a>Commit the staged changes with a message (To the local repository -&gt; HEAD):</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;Your Commit Message&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Send-all-the-commits-from-your-local-repository-to-the-remote-repository"><a href="#Send-all-the-commits-from-your-local-repository-to-the-remote-repository" class="headerlink" title="Send all the commits from your local repository to the remote repository:"></a>Send all the commits from your local repository to the remote repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h3 id="Push-a-specific-branch-to-the-remote-repository"><a href="#Push-a-specific-branch-to-the-remote-repository" class="headerlink" title="Push a specific branch to the remote repository:"></a>Push a specific branch to the remote repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Push-all-branches-to-the-remote-repository"><a href="#Push-all-branches-to-the-remote-repository" class="headerlink" title="Push all branches to the remote repository:"></a>Push all branches to the remote repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --all origin</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Checkout-and-Pull"><a href="#Checkout-and-Pull" class="headerlink" title="Checkout and Pull"></a>Checkout and Pull</h2><h3 id="Clone-a-GIT-repository"><a href="#Clone-a-GIT-repository" class="headerlink" title="Clone a GIT repository:"></a>Clone a GIT repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;repository_url&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Clone-a-specific-branch-from-a-GIT-repository"><a href="#Clone-a-specific-branch-from-a-GIT-repository" class="headerlink" title="Clone a specific branch from a GIT repository:"></a>Clone a specific branch from a GIT repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --branch &lt;branch_name&gt; &lt;repository_url&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Pull-Remote-changes-to-local-repository"><a href="#Pull-Remote-changes-to-local-repository" class="headerlink" title="Pull Remote changes to local repository:"></a>Pull Remote changes to local repository:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<h3 id="Check-if-the-pull-is-needed"><a href="#Check-if-the-pull-is-needed" class="headerlink" title="Check if the pull is needed:"></a>Check if the pull is needed:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote update      &#x2F;&#x2F; Gets your remote repository up to date</span><br><span class="line">git status -uno        &#x2F;&#x2F;shows whether the branch you are talking is ahead, behind or diverged.</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Branches"><a href="#Branches" class="headerlink" title="Branches"></a>Branches</h2><h3 id="Create-a-branch"><a href="#Create-a-branch" class="headerlink" title="Create a branch:"></a>Create a branch:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Show-current-branch"><a href="#Show-current-branch" class="headerlink" title="Show current branch:"></a>Show current branch:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+<h3 id="Show-all-git-branches"><a href="#Show-all-git-branches" class="headerlink" title="Show all git branches:"></a>Show all git branches:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
+
+<h3 id="Merge-a-different-branch-into-current-branch"><a href="#Merge-a-different-branch-into-current-branch" class="headerlink" title="Merge a different branch into current branch:"></a>Merge a different branch into current branch:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;other_branch_name&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Flags:<ul>
+<li>–abort : Rollback current conflicted merge.</li>
+<li>–continue : Continue merge process (should be used after resolving conflicts).</li>
+</ul>
+</li>
+</ul>
+<h3 id="Switch-to-a-branch"><a href="#Switch-to-a-branch" class="headerlink" title="Switch to a branch:"></a>Switch to a branch:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Create-a-new-branch-and-switch-to-it"><a href="#Create-a-new-branch-and-switch-to-it" class="headerlink" title="Create a new branch and switch to it:"></a>Create a new branch and switch to it:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;brach_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Create-a-new-branch-from-other-branch-and-switch-to-it"><a href="#Create-a-new-branch-from-other-branch-and-switch-to-it" class="headerlink" title="Create a new branch from other branch and switch to it:"></a>Create a new branch from other branch and switch to it:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;new_branch_name&gt; &lt;other_branch_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Delete-a-branch"><a href="#Delete-a-branch" class="headerlink" title="Delete a branch:"></a>Delete a branch:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><h3 id="Show-log"><a href="#Show-log" class="headerlink" title="Show log:"></a>Show log:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+     
+      
+        
+          <div  style="background-color: rgb(209, 209, 209); padding:5px">
+          <span style="margin-left: 10px;">
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/newcat/">newcat</a>, <a class="article-category-link" href="/categories/newcat/seccat/">seccat</a>
+</span>
+          
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li></ul>
+
+        </div>
+        
+        
+        <div>
+        
+       
+      
+
+      
+      </div>
+      
+            
+      
+    </footer>
+  </div>
+ 
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Useful-GIT-Commands"><span class="nav-number">1.</span> <span class="nav-text">Useful GIT Commands</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Following-is-the-list-of-some-useful-commands-which-may-come-in-handy-in-everyday-GITting"><span class="nav-number">1.1.</span> <span class="nav-text">Following is the list of some useful commands which may come in handy in everyday GITting. </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Index"><span class="nav-number">1.2.</span> <span class="nav-text">Index:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Config"><span class="nav-number">1.3.</span> <span class="nav-text">Config</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configure-GIT-Username"><span class="nav-number">1.3.1.</span> <span class="nav-text">Configure GIT Username:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Configure-GIT-Email"><span class="nav-number">1.3.2.</span> <span class="nav-text">Configure GIT Email:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Initialization"><span class="nav-number">1.4.</span> <span class="nav-text">Initialization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Initialize-a-GIT-repository"><span class="nav-number">1.4.1.</span> <span class="nav-text">Initialize a GIT repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-a-Remote"><span class="nav-number">1.4.2.</span> <span class="nav-text">Add a Remote:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#List-all-remote-repositories"><span class="nav-number">1.4.3.</span> <span class="nav-text">List all remote repositories:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Send-local-commits-to-remote-repository-for-first-time"><span class="nav-number">1.4.4.</span> <span class="nav-text">Send local commits to remote repository for first time:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Commit-and-Push"><span class="nav-number">1.5.</span> <span class="nav-text">Commit and Push</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-the-status-of-your-GIT-repository"><span class="nav-number">1.5.1.</span> <span class="nav-text">Show the status of your GIT repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-one-or-multiple-files-to-the-staging-area"><span class="nav-number">1.5.2.</span> <span class="nav-text">Add one or multiple files to the staging area:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Commit-the-staged-changes-with-a-message-To-the-local-repository-gt-HEAD"><span class="nav-number">1.5.3.</span> <span class="nav-text">Commit the staged changes with a message (To the local repository -&gt; HEAD):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Send-all-the-commits-from-your-local-repository-to-the-remote-repository"><span class="nav-number">1.5.4.</span> <span class="nav-text">Send all the commits from your local repository to the remote repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Push-a-specific-branch-to-the-remote-repository"><span class="nav-number">1.5.5.</span> <span class="nav-text">Push a specific branch to the remote repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Push-all-branches-to-the-remote-repository"><span class="nav-number">1.5.6.</span> <span class="nav-text">Push all branches to the remote repository:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Checkout-and-Pull"><span class="nav-number">1.6.</span> <span class="nav-text">Checkout and Pull</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clone-a-GIT-repository"><span class="nav-number">1.6.1.</span> <span class="nav-text">Clone a GIT repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clone-a-specific-branch-from-a-GIT-repository"><span class="nav-number">1.6.2.</span> <span class="nav-text">Clone a specific branch from a GIT repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pull-Remote-changes-to-local-repository"><span class="nav-number">1.6.3.</span> <span class="nav-text">Pull Remote changes to local repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Check-if-the-pull-is-needed"><span class="nav-number">1.6.4.</span> <span class="nav-text">Check if the pull is needed:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Branches"><span class="nav-number">1.7.</span> <span class="nav-text">Branches</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-branch"><span class="nav-number">1.7.1.</span> <span class="nav-text">Create a branch:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-current-branch"><span class="nav-number">1.7.2.</span> <span class="nav-text">Show current branch:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-all-git-branches"><span class="nav-number">1.7.3.</span> <span class="nav-text">Show all git branches:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Merge-a-different-branch-into-current-branch"><span class="nav-number">1.7.4.</span> <span class="nav-text">Merge a different branch into current branch:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Switch-to-a-branch"><span class="nav-number">1.7.5.</span> <span class="nav-text">Switch to a branch:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-branch-and-switch-to-it"><span class="nav-number">1.7.6.</span> <span class="nav-text">Create a new branch and switch to it:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-branch-from-other-branch-and-switch-to-it"><span class="nav-number">1.7.7.</span> <span class="nav-text">Create a new branch from other branch and switch to it:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Delete-a-branch"><span class="nav-number">1.7.8.</span> <span class="nav-text">Delete a branch:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Other"><span class="nav-number">1.8.</span> <span class="nav-text">Other</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-log"><span class="nav-number">1.8.1.</span> <span class="nav-text">Show log:</span></a></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <!-- <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2020 The Blogging Developer All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div> -->
+  <div class='footer-copy'>&copy; 2020 - The Blogging Developer</div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
