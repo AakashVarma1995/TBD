@@ -34,7 +34,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://thebloggingdeveloper.in/images/git.png">
 <meta property="article:published_time" content="2020-06-11T11:54:49.000Z">
-<meta property="article:modified_time" content="2020-06-12T19:24:40.000Z">
+<meta property="article:modified_time" content="2020-06-14T08:24:14.970Z">
 <meta property="article:author" content="Aakash Varma">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="git">
@@ -50,12 +50,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
   <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <style type="text/css">
+  <!-- <style type="text/css">
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
-    
+     -->
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
   
 <link rel="stylesheet" href="/css/style.css">
@@ -141,7 +141,7 @@ var themeMenus = {};
 
   <script>
   function setAboutIMG(){
-      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var imgUrls = "css/images/pose.jpg".split(",");
       var random = Math.floor((Math.random() * imgUrls.length ));
       if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
         document.getElementById("originBg").src=imgUrls[random];
@@ -166,7 +166,34 @@ var themeMenus = {};
       <div id="content" class="outer" style="margin-bottom: 0px; padding-bottom: 0px;">
         
           <section id="main" style="float:none;"><article id="post-useful-git-commands" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template" style="border: 1px solid #060608; box-shadow: 4px 4px #060608; padding: 16px; ">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template" style="border: 1px solid #060608; box-shadow: 4px 4px #060608;">
+    <div style="padding-top:16px; padding-left:16px; padding-right: 16px;">
+      
+        <header class="article-header">
+          
+  
+    <h1 class="thumb" class="article-title" itemprop="name" style="font-size: 1.8em;">
+      Some handy GIT commands
+    </h1>
+  
+ 
+        </header>
+      
+      <div class="article-meta" style="margin:5px 0px 10px 0px;">
+        
+	Posted on <a href="/2020/06/11/useful-git-commands/" class="article-date">
+	  <time datetime="2020-06-11T11:54:49.000Z" itemprop="datePublished">June 11, 2020</time>
+	</a>
+
+        
+	<span id="busuanzi_container_page_pv">
+		[Read count: <span id="busuanzi_value_page_pv"></span> ]
+	</span>
+
+      </div>
+      
+    </div>
+    <!-- <div style="padding:4px"> -->
     
 <div class="article-gallery">
   <div class="article-gallery-photos">
@@ -178,30 +205,10 @@ var themeMenus = {};
   </div>
 </div>
 
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" class="article-title" itemprop="name">
-      Some handy GIT commands
-    </h1>
-  
-
-      </header>
-    
-    <hr/>
-    <div class="article-meta" style="margin:5px 0px 10px 0px;">
-      
-	Posted on <a href="/2020/06/11/useful-git-commands/" class="article-date">
-	  <time datetime="2020-06-11T11:54:49.000Z" itemprop="datePublished">June 11, 2020</time>
-	</a>
-
-      
-	<span id="busuanzi_container_page_pv">
-		[Read count: <span id="busuanzi_value_page_pv"></span> ]
-	</span>
-
-    </div>
+    <!-- </div> -->
+    <div style="padding-left:16px; padding-right: 16px; padding-bottom: 16px;">
+   
+   
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote><p>“Most of us use Git on a daily basis. We have all read a book (or part of a book) about Git, we learned how to do commits, track additions and removals, work with branches and so on. But, there’s so much more to Git than just committing your changes.</p>
@@ -280,6 +287,7 @@ var themeMenus = {};
      
       
         
+          
           <div  style="background-color: rgb(209, 209, 209); padding:5px">
           <span style="margin-left: 10px;"></span>
           
@@ -327,6 +335,7 @@ var themeMenus = {};
 
       
     </footer>
+  </div>
   </div>
  
 </article>
