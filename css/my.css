@@ -2,3 +2,17 @@ hr{
     border-top: 1px solid grey;
     margin: 8px 0px 5px 0px;
 }
+
+.ghost-text{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+/* 
+pre{
+    color:#ccc;
+    font-size: 0.9em;
+    line-height: 1em; 
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+       
+} */

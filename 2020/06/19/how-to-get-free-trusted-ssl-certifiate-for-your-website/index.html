@@ -34,7 +34,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://thebloggingdeveloper.in/images/how-to-get-free-trusted-ssl-certifiate-for-your-website/how-to-get-free-trusted-ssl-certifiate-for-your-website-main.jpg">
 <meta property="article:published_time" content="2020-06-18T19:04:51.000Z">
-<meta property="article:modified_time" content="2020-06-18T20:27:47.350Z">
+<meta property="article:modified_time" content="2020-06-24T13:46:27.670Z">
 <meta property="article:author" content="Aakash Varma">
 <meta property="article:tag" content="Let&#39;s Encrypt">
 <meta property="article:tag" content="SSL">
@@ -250,7 +250,13 @@ SSL has almost become a <b>necessity</b> now, and when you're just starting up y
 <p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom:10px">
 At first, we'll add the <b>Certbot PPA</b> to the list of repositories. To do so, simply copy and paste the following commands on the terminal:</p>
 <div style="padding-left:10px;padding-right:10px;">
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install software-properties-common</span><br><span class="line">$ sudo add-apt-repository universe</span><br><span class="line">$ sudo add-apt-repository ppa:certbot/certbot</span><br><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
+<pre style="   color:#ccc; font-size:0.8em; font-family:Consolas;line-height:1.4em">
+<span class="ghost-text">$ </span>sudo apt-get update
+<span class="ghost-text">$ </span>sudo apt-get install software-properties-common
+<span class="ghost-text">$ </span>sudo add-apt-repository universe
+<span class="ghost-text">$ </span>sudo add-apt-repository ppa:certbot/certbot
+<span class="ghost-text">$ </span>sudo apt-get update
+</pre>
 </div>
 
 
@@ -260,7 +266,11 @@ At first, we'll add the <b>Certbot PPA</b> to the list of repositories. To do so
 Now, Let's install <b>Certbot</b>:
 </p>  
 <div style="padding-left:10px;padding-right:10px;">
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install certbot python3-certbot-apache</span><br></pre></td></tr></table></figure>
+<pre style="   color:#ccc; font-size:0.8em; font-family:Consolas;line-height:1.4em">
+<span class="ghost-text">$ </span>sudo apt-get install certbot python3-certbot-apache python3-certbot-nginx
+</pre>
+
+
 </div>
 
 <h3 style="margin-bottom:0px">3. Install Certificate:</h3>
@@ -269,12 +279,16 @@ The following commands will automatically configure the servers for <b>HTTPS</b>
 <b>For Apache:</b>
 
 <div style="padding-left:10px;padding-right:10px;">
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo certbot --apache</span><br></pre></td></tr></table></figure>
+<pre style="   color:#ccc; font-size:0.8em; font-family:Consolas;line-height:1.4em">
+<span class="ghost-text">$ </span>sudo certbot --apache
+</pre>
 </div>
 
 <p><b>For Nginx:</b></p>
 <div style="padding-left:10px;padding-right:10px;">
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo certbot --nginx</span><br></pre></td></tr></table></figure>
+<pre style="   color:#ccc; font-size:0.8em; font-family:Consolas;line-height:1.4em">
+<span class="ghost-text">$ </span>sudo certbot --nginx
+</pre>
 </div>
 
 
