@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>WSL - Perks of Windows and the Power of Linux! | The Blogging Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="wsl,windows,linux,microsoft,web,development,perks,power,Windows Subsystem for Linux,command,programming,coding,server,web,bash,shell,grep,gnu,ubuntu,update,wsl2" />
+  
+  
+  
+  
+  <meta name="description" content="I&#39;ve been a Microsoft Windows user Since XP! and I can keep on bragging how Windows is much more user friendly, has a rich collection of useful software and an intuitive GUI the Linux could never have">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WSL - Perks of Windows and the Power of Linux!">
+<meta property="og:url" content="https://thebloggingdeveloper.in/2020/06/27/wsl-perks-of-windows-and-power-of-linux/index.html">
+<meta property="og:site_name" content="The Blogging Developer">
+<meta property="og:description" content="I&#39;ve been a Microsoft Windows user Since XP! and I can keep on bragging how Windows is much more user friendly, has a rich collection of useful software and an intuitive GUI the Linux could never have">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://thebloggingdeveloper.in/images/wsl-perks-of-windows-and-power-of-linux/wsl-perks-of-windows-and-power-of-linux-main.png">
+<meta property="article:published_time" content="2020-06-27T09:49:26.000Z">
+<meta property="article:modified_time" content="2020-08-10T17:55:59.507Z">
+<meta property="article:author" content="Aakash Varma">
+<meta property="article:tag" content="wsl">
+<meta property="article:tag" content="windows">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="microsoft">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="development">
+<meta property="article:tag" content="perks">
+<meta property="article:tag" content="power">
+<meta property="article:tag" content="Windows Subsystem for Linux">
+<meta property="article:tag" content="command">
+<meta property="article:tag" content="programming">
+<meta property="article:tag" content="coding">
+<meta property="article:tag" content="server">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="bash">
+<meta property="article:tag" content="shell">
+<meta property="article:tag" content="grep">
+<meta property="article:tag" content="gnu">
+<meta property="article:tag" content="ubuntu">
+<meta property="article:tag" content="update">
+<meta property="article:tag" content="wsl2">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://thebloggingdeveloper.in/images/wsl-perks-of-windows-and-power-of-linux/wsl-perks-of-windows-and-power-of-linux-main.png">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+     -->
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="The Blogging Developer" rel="home"> The Blogging Developer </a>
+            
+          </h1>
+
+          
+            <div class="site-description">The Blogging Develoeper is all about Blogging and Development!</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer" style="margin-bottom: 0px; padding-bottom: 0px;">
+        
+          <section id="main" style="float:none;"><article id="post-wsl-perks-of-windows-and-power-of-linux" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template" style="border: 1px solid #060608; box-shadow: 4px 4px #060608;">
+    <div style="padding-top:16px; padding-left:16px; padding-right: 16px;">
+      
+        <header class="article-header">
+          
+  
+    <h1 class="thumb" class="article-title" itemprop="name" style="font-size: 1.8em;">
+      WSL - Perks of Windows and the Power of Linux!
+    </h1>
+  
+ 
+        </header>
+      
+      <div class="article-meta" style="margin:5px 0px 10px 0px;">
+        
+	Posted on <a href="/2020/06/27/wsl-perks-of-windows-and-power-of-linux/" class="article-date">
+	  <time datetime="2020-06-27T09:49:26.000Z" itemprop="datePublished">June 27, 2020</time>
+	</a>
+
+        
+	<span id="busuanzi_container_page_pv">
+		[Read count: <span id="busuanzi_value_page_pv"></span> ]
+	</span>
+
+      </div>
+      
+    </div>
+    <!-- <div style="padding:4px"> -->
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images/wsl-perks-of-windows-and-power-of-linux/wsl-perks-of-windows-and-power-of-linux-main.png" rel="gallery_ckdotmi1k0007bsougk2cg18q">
+        <img src="/images/wsl-perks-of-windows-and-power-of-linux/wsl-perks-of-windows-and-power-of-linux-main.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    <!-- </div> -->
+    <div style="padding-left:16px; padding-right: 16px; padding-bottom: 16px;">
+   
+   
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div style="background-color:#F3F5F9; margin-top:15px; text-align:justify; padding: 10px; border-radius:5px">
+I've been a <b>Microsoft Windows</b> user Since <b>XP</b>! and I can keep on bragging how <b>Windows</b> is much more <b>user friendly</b>, has a <b>rich collection of useful software</b> and an <b>intuitive GUI</b> the Linux could never have! But one thing that everyone will admit, is that <b>Linux is great for Programmers and Web Servers</b>. But can't we just have Windows and should also be able to do Linux things at the same time? It turns out that we can! Thanks to <b>WSL by Microsoft!</b>
+</div>
+
+<h2 style="margin-bottom: 0px">What is WSL?</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+    <b>The Windows Subsystem for Linux</b> lets developers run a GNU/Linux environment -- including most <b>command-line tools, utilities, and applications</b> -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup.<br/>
+    <b>With WSL, You can:</b>
+    <ul style="margin-top:8px; margin-bottom:8px; padding-left:10px; padding-right:10px;">
+        <li>Choose your <b>favorite GNU/Linux</b> distributions from the <b>Microsoft Store</b>.</li>
+        <li>Run common command-line tools such as <b>grep, sed, awk, or other ELF-64</b> binaries.</li>
+        <li>Run <b>Bash shell scripts</b> and <b>GNU/Linux command-line applications</b> including:
+            <ul>
+                <li><b>Tools:</b> vim, emacs, tmux</li>
+                <li><b>Languages:</b> NodeJS, Javascript, Python, Ruby, C/C++, C# & F#, Rust, Go, etc.</li>
+                <li><b>Services:</b> SSHD, MySQL, Apache, lighttpd, MongoDB, PostgreSQL.</li>
+            </ul>
+        </li>
+        <li>Install <b>additional software</b> using own GNU/Linux distribution <b>package manager</b>.</li>
+        <li><b>Invoke Windows applications</b> using a Unix-like command-line shell.</li>
+        <li>Invoke <b>GNU/Linux applications</b> on Windows [<a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank" rel="noopener">source</a>].</li>
+    </ul>
+</p> 
+
+<h2 style="margin-bottom: 0px">Minimum System Requirements</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+    These are the <b>minimum system requirements</b> to install WSL:
+    <ul style="margin-top:8px; margin-bottom:8px; padding-left:10px; padding-right:10px;">
+        <li>Windows <b>10 version 1607</b> (the Anniversary update) or above.</li>
+        <li><b>64-bit</b> Hardware and OS.</li>
+    </ul>
+</p>
+
+
+<h2 style="margin-bottom: 0px">Installation</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+    Now that you know what <b>WSL</b> is, let's get started with the installation! I'll try to keep the process as short as possible.
+</p> 
+
+<div style=" padding-left:10px; padding-right:10px">
+    <h3 style="margin-bottom:0px; margin-top:18px">Step 1: Enabling the Feature.</h3>
+
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">At first, you'll have to enable the <b>"Linux Subsystem for Windows" optional feature</b> in <b>Windows</b>. To do so, open <b>PowerShell</b> and paste the following command:</p> 
+
+<div style="background:#242424; color: grey; padding-left:18px; border: 1px solid grey; font-size:0.8em; font:thoma">
+PowerShell
+</div>
+<pre style="color:#ccc; font-size:0.8em; font-family:Consolas;line-height:1.4em; margin-top:0px; margin-bottom:0px">
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</pre>
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">After that, <b>restart</b> your computer.</p> 
+
+ <h3 style="margin-bottom:0px; margin-top:18px">Step 2: Installing your favourite <b>Linux Distro</b>.</h3>
+ <p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Now, let's open <b>Microsoft Store</b>, and Search for your Favourite Linux Distro (For the sake of this tutorial, let's use <b>Ununtu 18.04 LTS</b>)</p> 
+ <img src="/images/wsl-perks-of-windows-and-power-of-linux/wsl-perks-of-windows-and-power-of-linux-ubuntu-install.png" alt="Fig. Installing Ubuntu from Microsoft Store."/>
+ <p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Click on <b>"Get"</b> button. This will install <b>Ubuntu 18.04 LTS</b> on your computer (Inside <b>WSL</b>). After the process is complete, head over to Start Menu and and Open <b>Ubuntu 18.04 LTS</b>. Voila! you are running a <b>Linux Distro</b> right inside your <b>Windows Machine</b>!</p> 
+
+<img src="/images/wsl-perks-of-windows-and-power-of-linux/wsl-perks-of-windows-and-power-of-linux-ubuntu-main.png" alt="Fig. Ubuntu 18.04 LTS running with WSL."/>
+
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Voila! you are running a <b>Linux Distro</b> right inside your <b>Windows Machine</b>!</p>
+</div>
+
+<h2 style="margin-bottom: 0px">Wait! There's Some More...</h2> 
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+    Microsoft has now released <b>WSL2</b> in the <b>Windows 10 2004 Update</b>. Please let me know in the comments section if you want to hear about that from me. Thanks!
+</p> 
+
+
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+     
+      
+        
+          
+          <div  style="background-color: rgb(209, 209, 209); padding:5px">
+          <span style="margin-left: 10px;"></span>
+          
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/" rel="tag">windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wsl/" rel="tag">wsl</a></li></ul>
+
+        </div>
+        
+        
+        <div>
+        
+       
+      
+
+      
+      </div>
+      
+            
+      
+        
+	<section id="comments" class="comment" style="margin:0px; border: 2px dashed #6D7F8A; margin-top: 10px;">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'thebloggingdeveloper';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+      
+    </footer>
+  </div>
+  </div>
+ 
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">What is WSL?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text">Minimum System Requirements</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">3.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">3.1.</span> <span class="nav-text">Step 1: Enabling the Feature.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">3.2.</span> <span class="nav-text">Step 2: Installing your favourite Linux Distro.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">4.</span> <span class="nav-text">Wait! There&#39;s Some More...</span></a></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <!-- <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2020 The Blogging Developer All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div> -->
+  <div class='footer-copy'>&copy; 2020 - The Blogging Developer</div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

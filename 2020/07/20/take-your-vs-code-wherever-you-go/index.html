@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>Take your VS Code wherever you go! Here&#39;s how... | The Blogging Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="code-server,take,code-editor,portable,how,to,ide,the blogging developer,thebloggingdeveloper,blog,tech,full-stack,developer,development,software" />
+  
+  
+  
+  
+  <meta name="description" content="Every full-stack developer will relate to this issue! we use multiple machines for multiple projects. Though VS Code is a very powerful and versatile tool for developers. But, it lacks one fundamental">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Take your VS Code wherever you go! Here&#39;s how...">
+<meta property="og:url" content="https://thebloggingdeveloper.in/2020/07/20/take-your-vs-code-wherever-you-go/index.html">
+<meta property="og:site_name" content="The Blogging Developer">
+<meta property="og:description" content="Every full-stack developer will relate to this issue! we use multiple machines for multiple projects. Though VS Code is a very powerful and versatile tool for developers. But, it lacks one fundamental">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://thebloggingdeveloper.in/images/take-your-vs-code-wherever-you-go/take-your-vs-code-wherever-you-go-main.png">
+<meta property="article:published_time" content="2020-07-20T17:29:52.000Z">
+<meta property="article:modified_time" content="2020-08-10T17:55:59.476Z">
+<meta property="article:author" content="Aakash Varma">
+<meta property="article:tag" content="code-server">
+<meta property="article:tag" content="take">
+<meta property="article:tag" content="code-editor">
+<meta property="article:tag" content="portable">
+<meta property="article:tag" content="how">
+<meta property="article:tag" content="to">
+<meta property="article:tag" content="ide">
+<meta property="article:tag" content="the blogging developer">
+<meta property="article:tag" content="thebloggingdeveloper">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="tech">
+<meta property="article:tag" content="full-stack">
+<meta property="article:tag" content="developer">
+<meta property="article:tag" content="development">
+<meta property="article:tag" content="software">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://thebloggingdeveloper.in/images/take-your-vs-code-wherever-you-go/take-your-vs-code-wherever-you-go-main.png">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+     -->
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="The Blogging Developer" rel="home"> The Blogging Developer </a>
+            
+          </h1>
+
+          
+            <div class="site-description">The Blogging Develoeper is all about Blogging and Development!</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer" style="margin-bottom: 0px; padding-bottom: 0px;">
+        
+          <section id="main" style="float:none;"><article id="post-take-your-vs-code-wherever-you-go" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template" style="border: 1px solid #060608; box-shadow: 4px 4px #060608;">
+    <div style="padding-top:16px; padding-left:16px; padding-right: 16px;">
+      
+        <header class="article-header">
+          
+  
+    <h1 class="thumb" class="article-title" itemprop="name" style="font-size: 1.8em;">
+      Take your VS Code wherever you go! Here&#39;s how...
+    </h1>
+  
+ 
+        </header>
+      
+      <div class="article-meta" style="margin:5px 0px 10px 0px;">
+        
+	Posted on <a href="/2020/07/20/take-your-vs-code-wherever-you-go/" class="article-date">
+	  <time datetime="2020-07-20T17:29:52.000Z" itemprop="datePublished">July 20, 2020</time>
+	</a>
+
+        
+	<span id="busuanzi_container_page_pv">
+		[Read count: <span id="busuanzi_value_page_pv"></span> ]
+	</span>
+
+      </div>
+      
+    </div>
+    <!-- <div style="padding:4px"> -->
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images/take-your-vs-code-wherever-you-go/take-your-vs-code-wherever-you-go-main.png" rel="gallery_ckdotmi1i0004bsoucp7rd884">
+        <img src="/images/take-your-vs-code-wherever-you-go/take-your-vs-code-wherever-you-go-main.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    <!-- </div> -->
+    <div style="padding-left:16px; padding-right: 16px; padding-bottom: 16px;">
+   
+   
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div style="background-color:#F3F5F9; margin-top:15px; text-align:justify; padding: 10px; border-radius:5px">
+Every <b>full-stack developer</b> will relate to this issue! we use <b>multiple machines</b> for multiple projects. Though <b>VS Code</b> is a very <b>powerful</b> and <b>versatile</b> tool for developers. But, <b>it lacks one fundamental thing... i.e an option to save user preferences and reflect them across all the devices.</b> I get really irritated configuring all my comfy settings every single time on every single machine. Well, not anymore...
+</div>
+
+<h2 style="margin-bottom: 0px">How? ---> Code-Server!</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 0px" >
+   <b>Code-Server</b> is an <b>open-source</b> solution by [<b><a href="https://github.com/cdr" target="_blank" rel="noopener">Coder</a></b>]. It takes the <b>open source core</b> of <b>VS Code</b> and allows you to run it <b>in the browser</b> by hosting it onto a server. However, <b>it is not entirely equivalent to Microsoft's VS Code</b>.<br/>
+   <br/>
+    <span style="font-size:1.1em; font-weight:bold;">Highlights:</span>
+    <ul style="margin-top:1px; margin-bottom:8px; padding-left:10px; padding-right:10px;">
+        <li>Code on your Chromebook, tablet, and laptop with a <b>consistent development environment</b>.</li>
+        <li>Develop on a Linux machine and pick up from <b>any device with a web browser</b>.</li>
+        <li>Take advantage of <b>large cloud servers to speed up tests, compilations, downloads, and more</b>.</li>
+        <li>Preserve battery life when you're on the go as <b>all intensive tasks runs on your server</b>.</li>
+        <li>Make use of a spare computer you have lying around and turn it into a <b>full development environment</b>.</li>
+    </ul>
+</p> 
+
+<h2 style="margin-bottom: 0px">How To?</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+To setup <b>code-server</b> on the cloud, you'll need a <b>cloud VM instance</b>, or you can also set it up on your <b>local machine</b>. [<b><a href="https://github.com/cdr" target="_blank" rel="noopener">CDR</a></b>] provides a ready-to-use script to install <b>code-server</b> for <b>Linux, macOS and FreeBSD</b>.
+</p>
+<h3 style="margin-bottom:0px; margin-top:18px"><b>Process :</b></h3>
+
+<div style=" padding-left:10px; padding-right:10px">
+ <p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Copy and paste the following command in the terminal to print the install steps:</p> 
+
+<pre style="   color:#ccc; font-size:0.9em; font-family:Consolas;line-height:1.4em; margin-top:5px;margin-bottom:5px">
+<span class="ghost-text">$ </span>curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
+</pre>
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Now, you can run the installation script</p>
+<pre style="   color:#ccc; font-size:0.9em; font-family:Consolas;line-height:1.4em; margin-top:5px;margin-bottom:5px">
+<span class="ghost-text">$ </span>curl -fsSL https://code-server.dev/install.sh | sh
+</pre>
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">The above script will <b>download the respective installation package</b> for your operating system and will try to install it. After the installation completes, you can start the <b>code-server</b> by running the following command:</p> 
+<pre style="   color:#ccc; font-size:0.9em; font-family:Consolas;line-height:1.4em; margin-top:5px;margin-bottom:5px">
+<span class="ghost-text">$ </span>code-server
+</pre>
+ <p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Now, you can open your browser and start usign <b>VS Code</b> by typing <b>http://your_host_ip:8080</b> in your browser!</p> 
+
+ <img src="/images/take-your-vs-code-wherever-you-go/take-your-vs-code-wherever-you-go-vscode.png" alt="Running VS Code inside the Browser."/>
+
+</div>
+<h2 style="margin-bottom: 0px">The Takeaway...</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+  <b>code-server</b> is based on the <b>open-source</b> version of <b>VS Code</b>. Though it inherits most of the features, there <b>still are some compatibility issues</b> mostly with extensions. You can read more about <b>code-server</b> <a href="https://github.com/cdr/code-server" target="_blank" rel="noopener">here</a>. If you liked the the post, please <b>comment</b> and <b>share</b>... Thank you! 
+</p> 
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+     
+      
+        
+          
+          <div  style="background-color: rgb(209, 209, 209); padding:5px">
+          <span style="margin-left: 10px;"></span>
+          
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IDE/" rel="tag">IDE</a></li></ul>
+
+        </div>
+        
+        
+        <div>
+        
+       
+      
+
+      
+      </div>
+      
+            
+      
+        
+	<section id="comments" class="comment" style="margin:0px; border: 2px dashed #6D7F8A; margin-top: 10px;">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'thebloggingdeveloper';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+      
+    </footer>
+  </div>
+  </div>
+ 
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">How? ---&gt; Code-Server!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text">How To?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">2.1.</span> <span class="nav-text">Process :</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">3.</span> <span class="nav-text">The Takeaway...</span></a></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <!-- <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2020 The Blogging Developer All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div> -->
+  <div class='footer-copy'>&copy; 2020 - The Blogging Developer</div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
