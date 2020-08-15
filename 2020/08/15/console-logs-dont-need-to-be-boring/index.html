@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>Console Logs Don&#39;t Need To Be Boring! Here&#39;s How You Can Apply Stying To Them... | The Blogging Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="console.log(),console,console log styling,css,styling,thebloggingdeveloper,The Blogging Developer,Console Logs Don't Need To Be Boring! Here's How You Can Apply Stying To Them.,styling console logs,how to style console log,how to style console logs,how to,console log" />
+  
+  
+  
+  
+  <meta name="description" content="Have you ever tried using your browser&#39;s debug tools on Facebook? (If not, just go and try it right now!) Looks cool, right? Well, it&#39;s actually very easy to style your console logs and make your webs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Console Logs Don&#39;t Need To Be Boring! Here&#39;s How You Can Apply Stying To Them...">
+<meta property="og:url" content="https://thebloggingdeveloper.in/2020/08/15/console-logs-dont-need-to-be-boring/index.html">
+<meta property="og:site_name" content="The Blogging Developer">
+<meta property="og:description" content="Have you ever tried using your browser&#39;s debug tools on Facebook? (If not, just go and try it right now!) Looks cool, right? Well, it&#39;s actually very easy to style your console logs and make your webs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://thebloggingdeveloper.in/images/console-logs-dont-need-to-be-boring/console-logs-dont-need-to-be-boring-main.png">
+<meta property="article:published_time" content="2020-08-15T16:30:52.000Z">
+<meta property="article:modified_time" content="2020-08-15T17:23:11.063Z">
+<meta property="article:author" content="Aakash Varma">
+<meta property="article:tag" content="console.log()">
+<meta property="article:tag" content="console">
+<meta property="article:tag" content="console log styling">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="styling">
+<meta property="article:tag" content="thebloggingdeveloper">
+<meta property="article:tag" content="The Blogging Developer">
+<meta property="article:tag" content="Console Logs Don&#39;t Need To Be Boring! Here&#39;s How You Can Apply Stying To Them.">
+<meta property="article:tag" content="styling console logs">
+<meta property="article:tag" content="how to style console log">
+<meta property="article:tag" content="how to style console logs">
+<meta property="article:tag" content="how to">
+<meta property="article:tag" content="console log">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://thebloggingdeveloper.in/images/console-logs-dont-need-to-be-boring/console-logs-dont-need-to-be-boring-main.png">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+     -->
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="The Blogging Developer" rel="home"> The Blogging Developer </a>
+            
+          </h1>
+
+          
+            <div class="site-description">The Blogging Develoeper is all about Blogging and Development!</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer" style="margin-bottom: 0px; padding-bottom: 0px;">
+        
+          <section id="main" style="float:none;"><article id="post-console-logs-dont-need-to-be-boring" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template" style="border: 1px solid #060608; box-shadow: 4px 4px #060608;">
+    <div style="padding-top:16px; padding-left:16px; padding-right: 16px;">
+      
+        <header class="article-header">
+          
+  
+    <h1 class="thumb" class="article-title" itemprop="name" style="font-size: 1.8em;">
+      Console Logs Don&#39;t Need To Be Boring! Here&#39;s How You Can Apply Stying To Them...
+    </h1>
+  
+ 
+        </header>
+      
+      <div class="article-meta" style="margin:5px 0px 10px 0px;">
+        
+	Posted on <a href="/2020/08/15/console-logs-dont-need-to-be-boring/" class="article-date">
+	  <time datetime="2020-08-15T16:30:52.000Z" itemprop="datePublished">August 15, 2020</time>
+	</a>
+
+        
+	<span id="busuanzi_container_page_pv">
+		[Read count: <span id="busuanzi_value_page_pv"></span> ]
+	</span>
+
+      </div>
+      
+    </div>
+    <!-- <div style="padding:4px"> -->
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images/console-logs-dont-need-to-be-boring/console-logs-dont-need-to-be-boring-main.png" rel="gallery_ckdvx3a8y0002hkoud7po7w0w">
+        <img src="/images/console-logs-dont-need-to-be-boring/console-logs-dont-need-to-be-boring-main.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    <!-- </div> -->
+    <div style="padding-left:16px; padding-right: 16px; padding-bottom: 16px;">
+   
+   
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div style="background-color:#F3F5F9; margin-top:15px; text-align:justify; padding: 10px; border-radius:5px">
+Have you ever tried using your browser's <b>debug tools</b> on <b>Facebook</b>? (If not, just go and try it right now!) Looks cool, right? Well, it's actually very easy to <b>style your console logs</b> and make your website stand out to the <b>nerds</b> and <b>hackers</b> (really?). So, let's dive in...
+</div>
+
+<h2 style="margin-bottom: 0px">When, What and How?</h2> 
+ <img src="/images/console-logs-dont-need-to-be-boring/console-logs-dont-need-to-be-boring-fb.png" alt="Using Dev Tools on FB."/>
+
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 0px" >
+   Someday, I was just using <b>Facebook</b> and suddenly thought of inspecting the div elements. I pressed the <b>F12</b> key and the <b>console tab</b> came with the giant red <b>"STOP"</b>. That was really surprising! I had never thought of styling console logs before. So, I started googling about that and I came out that it was really easy. Just follow the tutorial and you'll know...
+</p> 
+
+<h2 style="margin-bottom: 0px">How To?</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+The add styles to <b>console.log()</b>, You can supply the text (prefix it with a <b>"%c"</b>) you want to style as the <b>first argument</b>. This way, it knows that this text is to be styled. In the <b>next argument, you can supply CSS-like attributes</b> for the styling.
+</p>
+<h3 style="margin-bottom:0px; margin-top:18px"><b>For example :</b></h3>
+
+<div style=" padding-left:10px; padding-right:10px">
+ <p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">To try it out, just <b>paste</b> this line in the <b>browser console</b>:</p> 
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'%cTheBloggingDeveloper '</span>, <span class="string">'color:white;background-color:black;font-size:30px'</span>)</span><br></pre></td></tr></table></figure>
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Or, you can copy and this code in a <b>text file</b> and open it in a <b>browser</b>!</p>
+<figure class="highlight html"><figcaption><span>index.html</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>It works<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">'%cTheBloggingDeveloper '</span>, <span class="string">'color:white;background-color:black;font-size:30px'</span>)</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        Open the Developer Tools to see the magic!  </span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p style="text-align:justify; margin-top: 10px; margin-bottom: 10px">Now, save the file as index.html and open it in a browser (p   referably Chrome), Open dev tools and go to console. You should see something like this:</p> 
+
+
+ <img src="/images/console-logs-dont-need-to-be-boring/console-logs-dont-need-to-be-boring-op.png" alt="Styling Console Logs with JS."/>
+
+</div>
+<h2 style="margin-bottom: 0px">The Takeaway...</h2> 
+
+<p style="text-align:justify; padding-left:10px; padding-right:10px; margin-top: 10px; margin-bottom: 10px" >
+  The <b>console.log()</b> is very <b>flexible</b> and <b>supports styling</b> too. Using <b>console.log()</b> styling is a great way to make your <b>logs stand out at the time of development</b>(so that they don't get buried under other useless logs) and to <b>warn users to stay away from fiddling with the site</b> in the production... That's it for today! If you liked the post, please <b>comment</b> and <b>share</b>... Thank you! 
+</p> 
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+     
+      
+        
+          
+          <div  style="background-color: rgb(209, 209, 209); padding:5px">
+          <span style="margin-left: 10px;"></span>
+          
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/developer-tools/" rel="tag">developer tools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
+
+        </div>
+        
+        
+        <div>
+        
+       
+      
+
+      
+      </div>
+      
+            
+      
+        
+	<section id="comments" class="comment" style="margin:0px; border: 2px dashed #6D7F8A; margin-top: 10px;">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'thebloggingdeveloper';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+      
+    </footer>
+  </div>
+  </div>
+ 
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">When, What and How?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text">How To?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">2.1.</span> <span class="nav-text">For example :</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">3.</span> <span class="nav-text">The Takeaway...</span></a></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <!-- <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2020 The Blogging Developer All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div> -->
+  <div class='footer-copy'>&copy; 2020 - The Blogging Developer</div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
